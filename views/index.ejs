@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SkyZoneApp</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+  <!-- Animate On Scroll Link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Title -->
+  <h1>SkyZone</h1>
+  <form action="/" method="post">
+    <input class="city" type="text" name="cityName" placeholder="Enter City Name">
+    <button class="button" type="submit" name="button">Fetch</button>
+  </form>
+  <!-- Main Weather Data Content -->
+  <% if ( city.length !== 0){ %>
+  <div class="report" data-aos="flip-down">
+    <div data-aos="zoom-in">
+      <h2><%= currentDate %></h2>
+      <h2 class="city"><%= city %></h2>
+      <img src=<%= finalIcon %> alt="">
+      <h2 class="temp"><%= finalTemp %> ° C</h2>
+      <h2 class="desc">The Weather Condition is <%= finalDesc %> today.</h2>
+    </div>
+  </div>
+  <%  } else {} %>
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1600,
+      once: true
+    });
+  </script>
+</body>
+<!-- Footer -->
+<footer>
+  <p>&copy; Prince Kamkar</p>
+</footer>
+
+</html>

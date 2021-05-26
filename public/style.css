@@ -1,0 +1,89 @@
+/* General CSS */
+body {
+  background-image: url("images/storm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: black;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 400;
+  font-size: 10.6vh;
+  margin: 2%;
+}
+
+.city {
+  font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  border: none;
+}
+
+h2, p {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 3.6vh;
+}
+
+input {
+  box-shadow: 1px 3px 12px 0 black;
+  border-radius: 5px;
+  background: transparent;
+  margin-right: 8px;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 35px;
+  top: 10px;
+  border: none;
+  color: black;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  width: 305px;
+}
+
+::placeholder {
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2%;
+}
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  border: none;
+  box-shadow: 1px 3px 12px 0 black;
+  padding: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+}
+
+button:hover {
+  background-color: white;
+}
+
+img {
+  width: 5%;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+.temp {
+  font-weight: bolder;
+  font-size: 8vh;
+  margin: 4% auto;
+}
+
+/* Footer */
+footer p {
+  font-style: "Montserrat", sans-serif;
+  font-size: 2vh;
+  margin-top: 3%;
+}
